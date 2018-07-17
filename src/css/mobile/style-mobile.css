@@ -1,0 +1,143 @@
+@charset "utf-8";
+/*faq*/
+.faq-section {
+    position: relative;
+    margin: 65px 0 0 0;
+}
+.faq-block-1 {
+    width: 100%;
+    height: 162px;
+    background: url(../../img/faq-m.png) no-repeat;
+    background-size: 100% 100%;
+}
+.faq-title {
+    color: #fff;
+    padding: 40px 0 0;
+}
+.faq-block-2 {
+    position: relative;
+    top: -20px;
+    z-index: 3;
+    width: 100%;
+    padding: 0 0 50px 0;
+}
+.item-question {
+    margin-bottom: 0;
+    background-color: transparent;
+    box-shadow: 0 0 0 #fff;
+    -webkit-box-shadow: 0 0 0 #fff;
+}
+.item-question-header {
+    color: #444;
+    height: 55px;
+    border-bottom: 1px solid #e8e8e8;
+    cursor: pointer;
+}
+.item-question-title {
+    font-size: 14px;
+    color: #333;
+    line-height: 55px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.item-question-body {
+    font-size: 12px;
+    padding: 25px 10px;
+    background-color: #f8f8f8;
+    color: #666;
+    line-height: 28px;
+}
+.arrowdown {
+    color: #333;
+    line-height: 55px;
+}
+.collapsed .arrowdown {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.faq-block-footer {
+    width: 100%;
+    height: 510px;
+    background-color: #060f2e;
+}
+#accordion {
+    background-color: #fff;
+    padding: 0 10px 30px;
+}
+/*news*/
+.news-section {
+    margin: 85px 0 220px;
+}
+.big-title {
+    color: #46548F;
+    padding: 35px 0 10px;
+}
+.news-list li {
+    margin: 20px 0 0 0;
+}
+.news-left-img{
+    width: 100%;
+    margin:0 5% 0 0;
+    overflow: hidden;
+}
+.news-left-img img{
+    width: 100%;
+}
+.news-right{
+    margin:20px 0 0 0;
+    font-size: 14px;
+}
+.news-title{
+    color: #333;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+    line-height: 18px;
+}
+.author{
+    text-align: right;
+    font-size: 12px;
+    color: #999;
+}
+.more-news {
+    padding: 25px 0 30px 0;
+    color: #488af9;
+    line-height: 22px;
+}
+.more-btn {
+    width: 85px;
+    height: 30px;
+    border: 1px solid #488AF9;
+    background: none;
+    border-radius: 3px;
+}
+.news-list {
+    padding: 0 0 20px 0;
+}
+/*newsDetail*/
+.newsdetail-section {
+    margin: 65px 0 50px;
+}
+.news-content {
+    margin: 20px 0 0;
+}
+.news-content pre {
+    padding: 30px 20px 30px;
+    color: #666;
+    line-height: 22px;
+}
+.newsdetail-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: #444;
+    margin: 40px 0 10px;
+    font-weight: bold;
+}
+.newsdetail-Subtitle{
+    font-size: 14px;
+    color: #666;
+    margin:0 0 16px;
+}
+.news-time {
+    font-size: 12px;
+    color: #999;
+}

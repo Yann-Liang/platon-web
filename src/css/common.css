@@ -1,0 +1,452 @@
+/*公共样式*/
+@charset "utf-8";
+HTML {
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+}
+body {
+    min-width: 1320px;
+    margin: 0;
+    color: #fff;
+    width: 100%;
+    font-size: 16px;
+    font-family: "PingFang SC","SF Pro SC","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    box-sizing: border-box;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+}
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+button,
+select {
+    text-transform: none;
+}
+/*清除默认盒子模型*/
+
+p,textarea,ul,li,select,h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+head,
+br {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333333;
+}
+a:link,a:visited{
+	text-decoration: none;
+}
+/* 去除IE下默认边框,顶部对齐 */
+img {
+    width: 100%;
+    border: none;
+    vertical-align: middle;
+}
+/* end reset */
+
+
+/* ----------------------------------------------------------------------- */
+
+
+/* public 公共部分*/
+
+
+/* 兼容IE浏览器清除浮动 */
+
+.clear {
+    zoom: 1;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* 左浮动，与右浮动 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+pre {
+    font-size: 14px;
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    line-height: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    word-break : normal;
+    white-space: pre-wrap!important;
+    word-wrap: break-word!important;
+    *white-space: normal!important;
+}
+/* end public */
+
+
+/* ------------------------------------------------------------------- */
+
+
+/*头部*/
+
+.content-box-shadow{
+    box-shadow: 0 0 50px 3px rgba(45,124,233,.14);
+    -webkit-box-shadow: 0 0 50px 3px rgba(45,124,233,.14);
+    -moz-box-shadow: 0 0 50px 3px rgba(45,124,233,.14);
+}
+.background-white{
+    background-color: #fff;
+}
+.block-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    min-width: 1120px;
+    height: 70px;
+    transition: all 0.3s;
+    background-color: rgba(36, 44, 57, .9);
+    /*border-bottom:1px solid #d8d8d8;*/
+}
+
+.content-min-size {
+    width: 1220px;
+    margin: 0 auto;
+    display: block;
+    /*padding:0 50px;*/
+    position: relative;
+}
+.paddingLR50{
+    padding: 0 50px;
+}
+.header-content{
+    position: absolute;
+    top:0;
+    left:50%;
+    margin:0 0 0 -610px;
+    animation: fadeInDown 2s;
+    -webkit-animation: fadeInDown 2s;
+}
+
+.block-header a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    min-width: 75px;
+    font-size: 16px;
+}
+.block-header-ul>li>a:hover{
+    /*color: #fff;*/
+    font-weight: bold;
+}
+
+.logo {
+    line-height: 70px;
+}
+
+.block-header-ul {
+    display: inline-block;
+    float: right;
+    padding: 0;
+}
+
+.block-header-ul li {
+    float: left;
+    padding: 0 15px;
+    line-height: 70px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+
+.change-language {
+    position: relative;
+    margin-left: 20px;
+    /*display: none;*/
+}
+.change-language .glyphicon-menu-down{
+    position: relative;
+    top:2px;
+    left:4px;
+    color:#fff;
+}
+
+.language-icon {
+    position: relative;
+    top:-2px;
+    width: 24px;
+    margin-right: 5px;
+}
+
+.model-language {
+    position: absolute;
+    top:60px;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 2px 5px 1px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 2px 5px 1px rgba(0,0,0,.3);
+    display: none;
+}
+.model-language:after{
+    position: absolute;
+    display: inline-block;
+    top: -4px;
+    left: 50%;
+    width: 0;
+    height: 0px;
+    margin-left: -3px;
+    content: '';
+    border-style: solid;
+    border-width: 6px;
+    border-color: #fff #fff transparent transparent;
+    transform: rotate(-45deg);
+    box-shadow: 1px -1px 1px rgba(0,0,0,.1);
+}
+
+.model-language li {
+    float: none;
+    line-height: 50px;
+}
+.model-language li a{
+    color: #000;
+    min-width: auto;
+}
+.model-language li.active a,.model-language li a:hover{
+    color:#5c95f7;
+}
+.triangle_up{
+    position: absolute;
+    left:50%;
+    top:-10px;
+    margin-left: -5px;
+}
+/*底部*/
+.block-footer{
+    position: relative;
+    z-index:2;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    padding: 80px 0 20px 0;
+    background-color: rgb(36,44,57);
+}
+.footer-left{
+    width: 30%;
+}
+.footer-right{
+    width: 70%;
+}
+.footer-left img{
+    width: 140px;
+    /*margin:80px 0 0 0;*/
+}
+.footer-title{
+    color: #444;
+    font-size: 18px;
+    margin:0 0 20px 0;
+}
+.input-ground-join{
+    width: 590px;
+    margin:0 auto;
+}
+.mail-input{
+    display: inline-block;
+    width: 470px;
+    height: 46px;
+    padding: 0 0 0 20px;
+    color:#999;
+    border: 1px solid #00c0ff;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    background-color: transparent;
+}
+.mail-input::-webkit-input-placeholder {
+    color: #999;
+}
+.btn-mail{
+    display: inline-block;
+    width: 120px;
+    height: 46px;
+    color: #fff;
+    line-height: 46px;
+    /*letter-spacing: 5px;*/
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    background: -moz-linear-gradient(left, #00c0ff, #62b1fa);
+    background: -webkit-linear-gradient(left, #00c0ff, #62b1fa);
+    background: -ms-linear-gradient(left, #00c0ff, #62b1fa);
+    background: linear-gradient(left, #00c0ff, #62b1fa);
+}
+.contact-us{
+    padding:70px 0 80px 0;
+}
+.contact-us,.contact-us a{
+    color:#2CAEF8;
+    font-size: 20px;
+}
+.abouts>ul>li{
+    width: 25%;
+    float: left;
+
+}
+.first-ul-title{
+    color:#afafaf;
+    font-size: 18px;
+    margin:0 0 30px 0;
+}
+.second-ul li{
+     margin:0 0 15px 0;
+}
+.second-ul li a{
+    text-decoration: none;
+    color:#6EAEFD;
+    font-size: 14px;
+
+}
+.second-ul li a:hover{
+    color: #488af9;
+}
+.footer-bottom{
+    margin:80px 0 0 0;
+    font-size: 12px;
+    color:#afafaf;
+}
+/*弹出框*/
+.mask{
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+.model-popup{
+    position: fixed;
+    left:50%;
+    top: 50%;
+    z-index: 9;
+    width: 500px;
+    margin:-240px 0 0 -300px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,.3);
+    display: none;
+}
+.close{
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+.close img{
+    width: 70%;
+}
+.subscribe-title{
+    padding:30px 0 20px 0;
+    font-size: 26px;
+    color:#488AF9;
+}
+.title-top{
+    margin:0 0 20px 0;
+}
+.title-top p{
+    color:#666;
+    font-size: 14px;
+    line-height: 24px;
+}
+.input-title{
+    display: block;
+    font-size: 14px;
+    color:#333;
+    margin:0 0 12px 0 ;
+}
+.div-from{
+    margin: 0 70px 14px;
+    color:#515151;
+}
+.input-margin{
+    margin:0 0 15px 0;
+}
+.input{
+    width: 355px;
+    height: 36px;
+    padding:0 0 0 20px;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+}
+.user-ul{
+    margin:0 0 0 -40px;
+    width: 395px;
+}
+.user-ul ul li{
+    float: left;
+    width: 50%;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    margin:0 0 12px 0;
+}
+.item-user{
+    font-size: 14px;
+    margin:0 0 0 40px;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+}
+.user-ul ul li.active .item-user{
+    color:#488AF9;
+    border: 1px solid #488AF9;
+}
+.subscribe-fotter{
+    width: 100%;
+    padding: 20px 0;
+    border-top:1px solid #e2e2e2;
+}
+.subscribe-fotter button{
+    width: 110px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #488AF9;
+}
+.back{
+    color:#488AF9;
+    background: transparent;
+    margin: 0 20px 0 0;
+}
+.subscribe-fotter button.submit{
+    border: none;
+}
+.gradient-submit {
+    background: -moz-linear-gradient(left, #58baff, #6da1f8);
+    background: -webkit-linear-gradient(left, #58baff, #6da1f8);
+    background: -ms-linear-gradient(left, #58baff, #6da1f8);
+    background: linear-gradient(left, #58baff, #6da1f8);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=1, startColorstr=#58baff, endColorstr=#6da1f8)";
+    +background: #6da1f8;
+}

@@ -1,0 +1,347 @@
+@charset "utf-8";
+/*轮播图*/
+.m1-index-block {
+    width: 100%;
+    height: 670px;
+    margin: 65px 0 0 0;
+    position: relative;
+    overflow: hidden;
+}
+.swiper-container{
+    height: 100%;
+}
+.swiper-container-banner .mBanner-bg-one{
+    background: rgb(36, 44, 57);
+}
+.swiper-container-banner .mBanner-bg-two{
+    background: url(../../img/banner-m.png) no-repeat center top;
+    background-size: cover;
+}
+.mword{
+    width: 207px;
+    margin:80px auto 0;
+}
+.gound-one,.gound-two,.gound-three{
+    position: absolute;
+    left:0;
+    bottom:3%;
+    margin: 0 auto;
+}
+.gound-bg{
+    position: absolute;
+    bottom:-40px;
+    left:0;
+}
+.gound-one img,.gound-two img,.gound-three img{
+    max-width: 750px;
+}
+.gound-three{
+    animation: square_2 2s linear infinite alternate;
+    -webkit-animation: square_2 2s linear infinite alternate;
+}
+.gound-two{
+    bottom:8%;
+    animation: square_1 2s linear infinite alternate;
+    -webkit-animation: square_1 2s linear infinite alternate;
+}
+@keyframes square_1 {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+@keyframes square_2 {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+    }
+}
+@-webkit-keyframes square_1 {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+@-webkit-keyframes square_2 {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+    }
+}
+.banner-h1-title{
+    font-size: 34px;
+    color:#fff;
+    margin:80px 0 10px 0;
+}
+.banner-p-title{
+    font-size: 16px;
+    color:#00D2FF;
+}
+.download{
+    position: relative;
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    margin:35px auto 0;
+    border:1px solid #fff;
+    border-radius: 4px;
+}
+.download a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #fff;
+}
+.download a:hover{
+    text-decoration: none;
+}
+.download img{
+    position: relative;
+    top:-1px;
+    width: 18px;
+    margin:0 10px 0 0;
+}
+.index-logo {
+    width: 90px;
+    margin: 130px auto 0 auto;
+}
+.text-back{
+    width: 170px;
+    margin: 55px auto 55px;
+}
+.h2-title-1 {
+    font-weight: 600;
+}
+.p-title-2 {
+    color: #000;
+    line-height: 24px;
+}
+.p-title-3{
+    font-size: 14px;
+    color: #000;
+    line-height: 28px;
+}
+/*内容*/
+.section{
+    width: 100%;
+}
+.m2-index-block{
+    margin:35px 0;
+    padding:45px 15px 35px;
+}
+.big-title{
+    color: #46548F;
+}
+.what-platon{
+    margin:30px 0 0 0;
+}
+.index2-img-top{
+    width: 45px;
+    margin:0 auto;
+}
+.index2p-title-2{
+    padding:20px 0;
+}
+.ul-detail-content{
+    margin: 0 0 0 7%;
+    width: 93%;
+}
+.index2-ul .ul-detail-content{
+    min-height: 100px;
+}
+.ul-detail-content>li{
+    text-align: left;
+    list-style: square;
+    color:#a0b8e3;
+    font-size: 14px;
+    margin:0 0 10px 0;
+}
+.ul-detail-content>li p{
+    color:#666;
+    font-size: 14px;
+}
+.index3-title-sm{
+    padding:20px 0 40px;
+}
+.network-earth-img img,.monad-img img,.roadmap-img img{
+    max-width: 330px;
+    height: auto;
+}
+.m3-index-content{
+    margin: 40px 0 0 0;
+}
+.roadmap-img{
+    margin:40px 0;
+}
+.news-list{
+    margin:30px 0 0 0;
+}
+.news-left-img{
+    width: 100%;
+    margin:0 5% 0 0;
+    overflow: hidden;
+}
+.news-left-img img{
+    width: 100%;
+}
+.news-right{
+    margin:20px 0 0 0;
+    font-size: 14px;
+}
+.news-title{
+    color: #333;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+    line-height: 18px;
+}
+.author{
+    text-align: right;
+    font-size: 12px;
+    color: #999;
+}
+.more-news{
+    margin:25px 0 0 0;
+    color: #488af9;
+    line-height: 22px;
+}
+.more-news-img{
+    width: 17px;
+    margin: -4px 0 0 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/*加入社区*/
+.icon-links{
+    width: 270px;
+    margin:35px auto;
+}
+.icon-links li{
+    float: left;
+    width:30px;
+    margin:0 10px 0 0;
+    position: relative;
+}
+.icon-links li:last-child{
+    margin:0;
+}
+.icon-links li a{
+    display: block;
+    width: ;
+}
+.contact-us,.contact-us a{
+    color:#2caef8;
+    font-size: 14px;
+}
+.weixin-img{
+    position:fixed;
+    top:50%;
+    left:50%;
+    z-index:10;
+    margin:-140px 0 0 -140px;
+    background-color: #fff;
+    width: 280px;
+    height: 280px;
+    padding:5px;
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 2px 5px 1px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 2px 5px 1px rgba(0,0,0,.3);
+    display: none;
+}
+.weixin-img img{
+	pointer-events: none;
+}
+/*应用案例*/
+.mcase-index-block{
+	margin: 35px 0;
+    padding: 45px 0 35px;
+}
+.item-question {
+    margin-bottom: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 10px 1px rgba(45,124,233,.1);
+    -webkit-box-shadow: 0 0 10px 1px rgba(45,124,233,.1);
+    -moz-box-shadow: 0 0 10px 1px rgba(45,124,233,.1);
+}
+.item-question-header {
+    color: #444;
+    height: 55px;
+    cursor: pointer;
+}
+.item-question-title {
+    font-size: 16px;
+    color: #444;
+    line-height: 55px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.item-question-title img{
+	width: 26px;
+	margin:0 20px 0 0;
+}
+.item-question-body {
+    font-size: 14px;
+    padding: 5px 18px 30px;
+    color: #444;
+    line-height: 24px;
+}
+.arrowdown {
+    color: #999;
+    line-height: 55px;
+}
+.collapsed .arrowdown {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.faq-block-footer {
+    width: 100%;
+    height: 510px;
+    background-color: #060f2e;
+}
+#accordion {
+    margin:40px 0 0;
+}
+@media all and (min-height:300px) and (max-height:570px){
+    .gound-one,.gound-two,.gound-three{
+        bottom:2%;
+    }
+    .gound-two{
+        bottom:7%;
+    }
+    .banner-h1-title{
+        margin: 75px 0 5px 0;
+    }
+    .download{
+        margin: 30px auto 0;
+    }
+}
+@media all and (min-height:730px) and (max-height:815px){
+    .gound-one,.gound-two,.gound-three{
+        bottom:5%;
+    }
+    .gound-two{
+        bottom:10%;
+    }
+    .banner-h1-title{
+        margin: 100px 0 10px 0;
+    }
+    .download{
+        margin: 45px auto 0;
+    }
+}
