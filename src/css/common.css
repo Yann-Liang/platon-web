@@ -24,6 +24,7 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 button,
 select {
     text-transform: none;
@@ -447,6 +448,6 @@ pre {
     background: -webkit-linear-gradient(left, #58baff, #6da1f8);
     background: -ms-linear-gradient(left, #58baff, #6da1f8);
     background: linear-gradient(left, #58baff, #6da1f8);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=1, startColorstr=#58baff, endColorstr=#6da1f8)";
-    +background: #6da1f8;
+    /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=1, startColorstr=#58baff, endColorstr=#6da1f8)";
+    +background: #6da1f8; */
 }
